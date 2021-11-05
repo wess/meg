@@ -1,0 +1,21 @@
+---
+name: Testing Time
+description: What does your project do
+version: 0.0.1
+
+env:
+  var: value
+
+server:
+  port: 3000
+  folder: ./public
+
+watch:
+  init: true
+  verbose: true
+  server: true
+  "./src/**/*.rs":
+    - hello
+
+hello: 
+  echo hello world
